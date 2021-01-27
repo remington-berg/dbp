@@ -208,7 +208,8 @@ body {
   background-image: url("images/overlay.png"),
     -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
   background-image: url("images/overlay.png"),
-    linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
+    linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)),
+    url("https://media.giphy.com/media/3o85xA30i7z1LUIISY/giphy.gif");
   background-repeat: repeat, no-repeat, no-repeat;
   background-size: 100px 100px, cover, cover;
   background-position: top left, center center, bottom center;
@@ -1021,11 +1022,11 @@ button:disabled,
   -ms-transition: opacity 1s ease, -ms-transform 1s ease;
   transition: opacity 1s ease, transform 1s ease;
   padding: 4.5em 3em 3em 3em;
-  background: #000000;
+  background: #3b3b3b;
   border-radius: 4px;
   cursor: default;
   max-width: 100%;
-  opacity: 0.8;
+  opacity: 0.9;
   position: relative;
   text-align: center;
   width: 27em;
@@ -1037,14 +1038,14 @@ button:disabled,
   margin-bottom: 1.5em;
 }
 
-#main .avatar img {
+/* #main .avatar img {
   display: block;
   margin: 0 auto;
   border-radius: 100%;
   box-shadow: 0 0 0 1.5em #ffffff;
-}
+} */
 
-#main .avatar:before {
+/* #main .avatar:before {
   content: "";
   display: block;
   position: absolute;
@@ -1055,8 +1056,7 @@ button:disabled,
   z-index: -1;
   background: #c8cccf;
 } */
-
-@media screen and (max-width: 480px) {
+*/ @media screen and (max-width: 480px) {
   #main {
     padding: 4em 2em 2.5em 2em;
     width: 100%;
@@ -1155,4 +1155,8 @@ body.is-preload #main {
 
 body.is-ie #wrapper {
   height: 100%;
+}
+
+.right {
+  float: right;
 }
