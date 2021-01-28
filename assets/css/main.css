@@ -200,7 +200,8 @@ html {
 
 body {
   height: 100%;
-
+  max-height: 120%;
+  width: 100%;
   /* background-color: #ffffff; */
   /* background-image: url("images/overlay.png"),
     -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg"); */
@@ -209,20 +210,22 @@ body {
   /* background-image: url("images/overlay.png"),
     -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg"); */
   background-image: url("https://media.giphy.com/media/3o85xA30i7z1LUIISY/giphy.gif");
-
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 
-  /* background-repeat: no-repeat, no-repeat;
-  background-size: contain, cover, cover;
+  background-repeat: no-repeat, no-repeat;
+  /* background-size: contain, cover, cover;
   position: cover, cover;
   background-attachment: fixed, fixed, fixed; */
 }
 
-body:after {
+/* body:after {
   content: "";
   display: block;
   position: fixed;
@@ -248,7 +251,7 @@ body:after {
   -webkit-transition: opacity 1.75s ease-out;
   -ms-transition: opacity 1.75s ease-out;
   transition: opacity 1.75s ease-out;
-}
+} */
 
 body.is-preload:after {
   opacity: 1;
@@ -1027,15 +1030,15 @@ button:disabled,
   -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
   -ms-transition: opacity 1s ease, -ms-transform 1s ease;
   transition: opacity 1s ease, transform 1s ease;
-  padding: 4.5em 3em 3em 3em;
+  /* padding: 4.5em 3em 3em 3em; */
   background: #3b3b3b;
-  border-radius: 4px;
+  /* border-radius: 4px; */
   cursor: default;
-  max-width: 100%;
+  /* max-width: 100%; */
   opacity: 0.9;
   position: relative;
   text-align: center;
-  width: 27em;
+  width: 20em;
 }
 
 /* #main .avatar {
@@ -1062,7 +1065,7 @@ button:disabled,
   z-index: -1;
   background: #c8cccf;
 } */
-*/ @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   #main {
     padding: 4em 2em 2.5em 2em;
     width: 100%;
@@ -1140,7 +1143,7 @@ body.is-preload #main {
   perspective: 1000px;
   position: relative;
   min-height: 100%;
-  padding: 1.5em;
+  padding: 1em;
   z-index: 2;
 }
 
@@ -1165,4 +1168,7 @@ body.is-ie #wrapper {
 
 .right {
   float: right;
+}
+.center {
+  text-align: center;
 }
