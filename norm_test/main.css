@@ -1,0 +1,85 @@
+body {
+  background-image: url("https://media.giphy.com/media/3o85xA30i7z1LUIISY/giphy.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  /* background-attachment: fixed; */
+  /* position: -webkit-sticky; */
+  position: sticky;
+  top: 0;
+  background-color: rgb(178, 162, 67, 1);
+  height: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.card-background {
+  background-color: #3b3b3b;
+  opacity: 0.9;
+  float: right;
+  max-height: 100%;
+  max-width: 100%;
+  margin-top: 10%;
+  /* margin-right: 5%; */
+  /* padding: medium; */
+  /* position: fixed right; */
+  /* margin-bottom: 5%; */
+  /* max-width: 40%; */
+}
+
+.card-text-color {
+  color: rgb(255, 255, 255);
+  line-height: 1;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+.icon {
+  font-size: 20px;
+  position: auto;
+  display: inline-block;
+  border-radius: 90%;
+  border: solid 1px whitesmoke;
+  color: white;
+  margin-bottom: 1em;
+}
+
+.my-card-img {
+  margin-top: 1em;
+  max-width: 75%;
+}
+
+.footer {
+  margin-top: 30%;
+  text-align: center;
+  color: rgb(214, 214, 214);
+  font-weight: 200;
+  width: 100%;
+  background-color: rgb(178, 162, 67, 1);
+}
+
+@media only screen and (min-width: 768px) {
+  .card-properties {
+    width: 5%;
+    height: fit-content;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .card-properties {
+    width: 33%;
+    height: fit-content;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .card-properties {
+    width: 33%;
+    height: fit-content;
+  }
+}
