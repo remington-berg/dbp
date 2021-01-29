@@ -67,7 +67,7 @@ body {
 
 @media only screen and (min-width: 768px) {
   .card-properties {
-    width: 5%;
+    width: 10%;
     height: fit-content;
   }
 }
@@ -79,6 +79,6 @@ body {
 }
 @media only screen and (max-width: 600px) {
   .card-properties {
-    width: 40%;
+    width: 41%;
   }
 }
