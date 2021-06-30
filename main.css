@@ -1,5 +1,6 @@
 body {
-  background-image: url("https://media.giphy.com/media/3o85xA30i7z1LUIISY/giphy.gif");
+  /* background-image: url("https://media.giphy.com/media/3o85xA30i7z1LUIISY/giphy.gif"); */
+  background-image: url("chicago.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -7,7 +8,7 @@ body {
   /* position: -webkit-sticky; */
   position: sticky;
   top: 0;
-  background-color: rgb(178, 162, 67, 1);
+  background-color: rgb(0, 0, 0);
   height: 100%;
 }
 
@@ -21,8 +22,8 @@ body {
 }
 
 .card-background {
-  background-color: #3b3b3b;
-  opacity: 0.9;
+  background-color: #252836;
+  opacity: 1;
   float: right;
   max-height: 100%;
   max-width: 100%;
@@ -54,6 +55,7 @@ body {
 .my-card-img {
   margin-top: 1em;
   max-width: 75%;
+  opacity: 1;
 }
 
 .footer {
@@ -62,7 +64,7 @@ body {
   color: rgb(214, 214, 214);
   font-weight: 200;
   width: 100%;
-  background-color: rgb(178, 162, 67, 1);
+  background-color: rgb(0, 0, 0);
 }
 
 @media only screen and (min-width: 768px) {
